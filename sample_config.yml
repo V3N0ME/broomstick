@@ -1,0 +1,45 @@
+apiVersion: v1
+clusters:
+  - id: personal_1
+    service_account: sample
+    project_id: personal-dev-1
+    location: asia-south1-b
+    cluster: kube-dev
+    schedule:
+        monday:
+            start_time: 9:00
+            end_time: 22:00
+        tuesday:
+            start_time: 9:00
+            end_time: 22:00
+        wednesday:
+            start_time: 9:00
+            end_time: 22:00
+        thursday:
+            start_time: 17:40
+            end_time: 17:30
+        friday:
+            start_time: 9:00
+            end_time: 22:00
+  
+  - id: personal_2
+    service_account: sample
+    project_id: personal_dev-2
+    location: asia-south1-b
+    cluster: kube-dev
+    schedule:
+        monday:
+            start_time: 9:00
+            end_time: 22:00
+        tuesday:
+            start_time: 9:00
+            end_time: 22:00
+        wednesday:
+            start_time: 9:00
+            end_time: 22:00
+        thursday:
+            start_time: 18:03
+            end_time: 17:57
+        friday:
+            start_time: 9:00
+            end_time: 22:00
