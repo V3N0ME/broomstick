@@ -56,17 +56,19 @@ func NewBroomstick(config Configuration) *broomstick {
 			Cluster:        clusterInfo.Cluster,
 		}
 
+		clusterID := clusterInfo.ID
+
 		scheduler.Schedule(clusterInfo.Schedule, func() {
 
 			taskQueue <- task{
-				ID:     clusterInfo.ID,
+				ID:     clusterID,
 				Action: "ON",
 			}
 
 		}, func() {
 
 			taskQueue <- task{
-				ID:     clusterInfo.ID,
+				ID:     clusterID,
 				Action: "OFF",
 			}
 		})
