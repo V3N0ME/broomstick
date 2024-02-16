@@ -12,14 +12,14 @@ Specify YAML file of the schema below.
 apiVersion: v1
 clusters:
 - id: sikka
-	service_account: <base_64_encoded_service_account>
-	project_id: sikka-dev
-	location: asia-south1-b
-	cluster: sikka-1
-	schedule:
-		monday:
-			start_time: 9:00
-			end_time: 22:00
+  service_account: <base_64_encoded_service_account>
+  project_id: sikka-dev
+  location: asia-south1-b
+  cluster: sikka-1
+  schedule:
+    monday:
+      start_time: 9:00
+      end_time: 22:00
 ```
 
 ### -schedule 
